@@ -1,0 +1,1210 @@
+2024-07-25 12:14:53.855 [main] INFO  utils.Log4jFilter - Starting test: Create Post RestAssuredAutomation
+2024-07-25 12:14:54.003 [main] INFO  utils.Log4jFilter - Start date of test: Create Post Thu Jul 25 12:14:52 IST 2024
+2024-07-25 12:14:55.468 [main] INFO  requestResponseLogger - ========== REQUEST ==============
+2024-07-25 12:14:55.468 [main] INFO  requestResponseLogger - Method: POST
+2024-07-25 12:14:55.473 [main] INFO  requestResponseLogger - URI: https://jsonplaceholder.typicode.com/posts
+2024-07-25 12:14:55.474 [main] INFO  requestResponseLogger - Headers: Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json
+2024-07-25 12:14:55.474 [main] INFO  requestResponseLogger - Content-Type: application/json
+2024-07-25 12:14:55.476 [main] INFO  requestResponseLogger - Cookies: 
+2024-07-25 12:14:55.494 [main] INFO  requestResponseLogger - Body: { "title": "foo", "body": "bar", "userId": 1 }
+2024-07-25 12:14:57.630 [main] INFO  requestResponseLogger - ========== RESPONSE ==============
+2024-07-25 12:14:57.630 [main] INFO  requestResponseLogger - Status Code: 201
+2024-07-25 12:14:57.631 [main] INFO  requestResponseLogger - Status Line: HTTP/1.1 201 Created
+2024-07-25 12:14:57.631 [main] INFO  requestResponseLogger - Headers: Date=Thu, 25 Jul 2024 06:44:57 GMT
+Content-Type=application/json; charset=utf-8
+Content-Length=65
+Connection=keep-alive
+Report-To={"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1721889897&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=TQTzhpQvAH1oF%2B7RxH0fJpyWLVsx9NAkRKcMngskQZ8%3D"}]}
+Reporting-Endpoints=heroku-nel=https://nel.heroku.com/reports?ts=1721889897&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=TQTzhpQvAH1oF%2B7RxH0fJpyWLVsx9NAkRKcMngskQZ8%3D
+Nel={"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By=Express
+X-Ratelimit-Limit=1000
+X-Ratelimit-Remaining=999
+X-Ratelimit-Reset=1721889951
+Vary=Origin, X-HTTP-Method-Override, Accept-Encoding
+Access-Control-Allow-Credentials=true
+Cache-Control=no-cache
+Pragma=no-cache
+Expires=-1
+Access-Control-Expose-Headers=Location
+Location=https://jsonplaceholder.typicode.com/posts/101
+X-Content-Type-Options=nosniff
+Etag=W/"41-GDNaWfnVU6RZhpLbye0veBaqcHA"
+Via=1.1 vegur
+CF-Cache-Status=DYNAMIC
+Server=cloudflare
+CF-RAY=8a8a2f314b554bde-MXP
+alt-svc=h3=":443"; ma=86400
+2024-07-25 12:14:57.652 [main] INFO  requestResponseLogger - Cookies: {}
+2024-07-25 12:14:57.739 [main] INFO  requestResponseLogger - Body: {
+    "title": "foo",
+    "body": "bar",
+    "userId": 1,
+    "id": 101
+}
+2024-07-25 12:15:00.068 [main] INFO  utils.Log4jFilter - Post created with ID: 101
+2024-07-25 12:15:00.070 [main] INFO  utils.Log4jFilter - Response : {
+    "title": "foo",
+    "body": "bar",
+    "userId": 1,
+    "id": 101
+}
+2024-07-25 12:15:00.202 [main] INFO  utils.Log4jFilter - Starting test: Read Post with ID 1
+2024-07-25 12:15:00.203 [main] INFO  utils.Log4jFilter - Full URL: https://jsonplaceholder.typicode.com/posts/1
+2024-07-25 12:15:00.226 [main] INFO  requestResponseLogger - ========== REQUEST ==============
+2024-07-25 12:15:00.227 [main] INFO  requestResponseLogger - Method: GET
+2024-07-25 12:15:00.231 [main] INFO  requestResponseLogger - URI: https://jsonplaceholder.typicode.com/posts/1
+2024-07-25 12:15:00.231 [main] INFO  requestResponseLogger - Headers: Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json
+2024-07-25 12:15:00.231 [main] INFO  requestResponseLogger - Content-Type: application/json
+2024-07-25 12:15:00.231 [main] INFO  requestResponseLogger - Cookies: 
+2024-07-25 12:15:00.232 [main] INFO  requestResponseLogger - Path Params: {pathId=1}
+2024-07-25 12:15:00.936 [main] INFO  requestResponseLogger - ========== RESPONSE ==============
+2024-07-25 12:15:00.936 [main] INFO  requestResponseLogger - Status Code: 200
+2024-07-25 12:15:00.937 [main] INFO  requestResponseLogger - Status Line: HTTP/1.1 200 OK
+2024-07-25 12:15:00.937 [main] INFO  requestResponseLogger - Headers: Date=Thu, 25 Jul 2024 06:45:00 GMT
+Content-Type=application/json; charset=utf-8
+Transfer-Encoding=chunked
+Connection=keep-alive
+Report-To={"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1718656459&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=u6jg%2FMsrjlsgha%2BTP8gEVACdDgpDCdoW212kbLRnudc%3D"}]}
+Reporting-Endpoints=heroku-nel=https://nel.heroku.com/reports?ts=1718656459&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=u6jg%2FMsrjlsgha%2BTP8gEVACdDgpDCdoW212kbLRnudc%3D
+Nel={"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By=Express
+X-Ratelimit-Limit=1000
+X-Ratelimit-Remaining=999
+X-Ratelimit-Reset=1718656500
+Vary=Origin, Accept-Encoding
+Access-Control-Allow-Credentials=true
+Cache-Control=max-age=43200
+Pragma=no-cache
+Expires=-1
+X-Content-Type-Options=nosniff
+Etag=W/"124-yiKdLzqO5gfBrJFrcdJ8Yq0LGnU"
+Via=1.1 vegur
+CF-Cache-Status=HIT
+Age=7361
+Server=cloudflare
+CF-RAY=8a8a2f481befbaeb-MXP
+Content-Encoding=gzip
+alt-svc=h3=":443"; ma=86400
+2024-07-25 12:15:00.937 [main] INFO  requestResponseLogger - Cookies: {}
+2024-07-25 12:15:00.940 [main] INFO  requestResponseLogger - Body: {
+    "userId": 1,
+    "id": 1,
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}
+2024-07-25 12:15:00.963 [main] INFO  utils.Log4jFilter - Starting test: Update Post with ID 1
+2024-07-25 12:15:00.972 [main] INFO  requestResponseLogger - ========== REQUEST ==============
+2024-07-25 12:15:00.972 [main] INFO  requestResponseLogger - Method: PUT
+2024-07-25 12:15:00.974 [main] INFO  requestResponseLogger - URI: https://jsonplaceholder.typicode.com/posts/1
+2024-07-25 12:15:00.974 [main] INFO  requestResponseLogger - Headers: Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json
+2024-07-25 12:15:00.975 [main] INFO  requestResponseLogger - Content-Type: application/json
+2024-07-25 12:15:00.975 [main] INFO  requestResponseLogger - Cookies: 
+2024-07-25 12:15:00.976 [main] INFO  requestResponseLogger - Path Params: {postId=1}
+2024-07-25 12:15:00.976 [main] INFO  requestResponseLogger - Body: { "id": 1, "title": "foo_updated", "body": "bar_updated", "userId": 1 }
+2024-07-25 12:15:01.983 [main] INFO  requestResponseLogger - ========== RESPONSE ==============
+2024-07-25 12:15:01.983 [main] INFO  requestResponseLogger - Status Code: 200
+2024-07-25 12:15:01.983 [main] INFO  requestResponseLogger - Status Line: HTTP/1.1 200 OK
+2024-07-25 12:15:01.983 [main] INFO  requestResponseLogger - Headers: Date=Thu, 25 Jul 2024 06:45:01 GMT
+Content-Type=application/json; charset=utf-8
+Transfer-Encoding=chunked
+Connection=keep-alive
+Report-To={"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1721889901&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=6WtpGS0ZoAXzL%2FMeumOYzAUF6i%2B4NBK4yFCrXqMEyJk%3D"}]}
+Reporting-Endpoints=heroku-nel=https://nel.heroku.com/reports?ts=1721889901&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=6WtpGS0ZoAXzL%2FMeumOYzAUF6i%2B4NBK4yFCrXqMEyJk%3D
+Nel={"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By=Express
+X-Ratelimit-Limit=1000
+X-Ratelimit-Remaining=998
+X-Ratelimit-Reset=1721889951
+Vary=Origin, Accept-Encoding
+Access-Control-Allow-Credentials=true
+Cache-Control=no-cache
+Pragma=no-cache
+Expires=-1
+X-Content-Type-Options=nosniff
+Etag=W/"4f-6/pAxRdZN+dgEcj34nJow0Zzx2c"
+Via=1.1 vegur
+CF-Cache-Status=DYNAMIC
+Server=cloudflare
+CF-RAY=8a8a2f4ccd45525b-MXP
+Content-Encoding=gzip
+alt-svc=h3=":443"; ma=86400
+2024-07-25 12:15:01.983 [main] INFO  requestResponseLogger - Cookies: {}
+2024-07-25 12:15:01.984 [main] INFO  requestResponseLogger - Body: {
+    "id": 1,
+    "title": "foo_updated",
+    "body": "bar_updated",
+    "userId": 1
+}
+2024-07-25 12:15:02.083 [main] INFO  requestResponseLogger - ========== REQUEST ==============
+2024-07-25 12:15:02.083 [main] INFO  requestResponseLogger - Method: DELETE
+2024-07-25 12:15:02.084 [main] INFO  requestResponseLogger - URI: https://jsonplaceholder.typicode.com/posts/1
+2024-07-25 12:15:02.085 [main] INFO  requestResponseLogger - Headers: Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json
+2024-07-25 12:15:02.085 [main] INFO  requestResponseLogger - Content-Type: application/json
+2024-07-25 12:15:02.085 [main] INFO  requestResponseLogger - Cookies: 
+2024-07-25 12:15:02.085 [main] INFO  requestResponseLogger - Path Params: {postId=1}
+2024-07-25 12:15:02.858 [main] INFO  requestResponseLogger - ========== RESPONSE ==============
+2024-07-25 12:15:02.858 [main] INFO  requestResponseLogger - Status Code: 200
+2024-07-25 12:15:02.858 [main] INFO  requestResponseLogger - Status Line: HTTP/1.1 200 OK
+2024-07-25 12:15:02.859 [main] INFO  requestResponseLogger - Headers: Date=Thu, 25 Jul 2024 06:45:02 GMT
+Content-Type=application/json; charset=utf-8
+Content-Length=2
+Connection=keep-alive
+Report-To={"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1721889902&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=O6XIYslb8xH1%2B61EOICOsagSaxRMjRaEDF1ycvPRkWw%3D"}]}
+Reporting-Endpoints=heroku-nel=https://nel.heroku.com/reports?ts=1721889902&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=O6XIYslb8xH1%2B61EOICOsagSaxRMjRaEDF1ycvPRkWw%3D
+Nel={"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By=Express
+X-Ratelimit-Limit=1000
+X-Ratelimit-Remaining=997
+X-Ratelimit-Reset=1721889951
+Vary=Origin, Accept-Encoding
+Access-Control-Allow-Credentials=true
+Cache-Control=no-cache
+Pragma=no-cache
+Expires=-1
+X-Content-Type-Options=nosniff
+Etag=W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+Via=1.1 vegur
+CF-Cache-Status=DYNAMIC
+Server=cloudflare
+CF-RAY=8a8a2f5369823756-MXP
+alt-svc=h3=":443"; ma=86400
+2024-07-25 12:15:02.859 [main] INFO  requestResponseLogger - Cookies: {}
+2024-07-25 12:15:02.860 [main] INFO  requestResponseLogger - Body: {
+    
+}
+2024-07-25 12:15:02.867 [main] INFO  utils.Log4jFilter - Starting test: Failing Create Post
+2024-07-25 12:15:02.872 [main] INFO  requestResponseLogger - ========== REQUEST ==============
+2024-07-25 12:15:02.873 [main] INFO  requestResponseLogger - Method: POST
+2024-07-25 12:15:02.874 [main] INFO  requestResponseLogger - URI: https://jsonplaceholder.typicode.com/posts
+2024-07-25 12:15:02.874 [main] INFO  requestResponseLogger - Headers: Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json
+2024-07-25 12:15:02.876 [main] INFO  requestResponseLogger - Content-Type: application/json
+2024-07-25 12:15:02.876 [main] INFO  requestResponseLogger - Cookies: 
+2024-07-25 12:15:02.877 [main] INFO  requestResponseLogger - Body: { "title": "foo", "body": "bar" }
+2024-07-25 12:15:03.646 [main] INFO  requestResponseLogger - ========== RESPONSE ==============
+2024-07-25 12:15:03.646 [main] INFO  requestResponseLogger - Status Code: 201
+2024-07-25 12:15:03.646 [main] INFO  requestResponseLogger - Status Line: HTTP/1.1 201 Created
+2024-07-25 12:15:03.647 [main] INFO  requestResponseLogger - Headers: Date=Thu, 25 Jul 2024 06:45:03 GMT
+Content-Type=application/json; charset=utf-8
+Content-Length=50
+Connection=keep-alive
+Report-To={"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1721889903&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Juzukd9bwDbE27i7F6w2%2FK8zcs9YQALq2V8DlRyg%2FCA%3D"}]}
+Reporting-Endpoints=heroku-nel=https://nel.heroku.com/reports?ts=1721889903&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Juzukd9bwDbE27i7F6w2%2FK8zcs9YQALq2V8DlRyg%2FCA%3D
+Nel={"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By=Express
+X-Ratelimit-Limit=1000
+X-Ratelimit-Remaining=996
+X-Ratelimit-Reset=1721889951
+Vary=Origin, X-HTTP-Method-Override, Accept-Encoding
+Access-Control-Allow-Credentials=true
+Cache-Control=no-cache
+Pragma=no-cache
+Expires=-1
+Access-Control-Expose-Headers=Location
+Location=https://jsonplaceholder.typicode.com/posts/101
+X-Content-Type-Options=nosniff
+Etag=W/"32-nJR3u31qpyK9Q43owc5bvZFyisY"
+Via=1.1 vegur
+CF-Cache-Status=DYNAMIC
+Server=cloudflare
+CF-RAY=8a8a2f581b320d77-MRS
+alt-svc=h3=":443"; ma=86400
+2024-07-25 12:15:03.647 [main] INFO  requestResponseLogger - Cookies: {}
+2024-07-25 12:15:03.648 [main] INFO  requestResponseLogger - Body: {
+    "title": "foo",
+    "body": "bar",
+    "id": 101
+}
+2024-07-25 12:15:03.683 [main] INFO  utils.Log4jFilter - This test is intentionally skipped.
+2024-07-25 12:15:03.686 [main] INFO  utils.Log4jFilter - Starting test: Failing Read Post with non-existing ID
+2024-07-25 12:15:03.692 [main] INFO  requestResponseLogger - ========== REQUEST ==============
+2024-07-25 12:15:03.693 [main] INFO  requestResponseLogger - Method: GET
+2024-07-25 12:15:03.694 [main] INFO  requestResponseLogger - URI: https://jsonplaceholder.typicode.com/posts/99999
+2024-07-25 12:15:03.694 [main] INFO  requestResponseLogger - Headers: Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json
+2024-07-25 12:15:03.694 [main] INFO  requestResponseLogger - Content-Type: application/json
+2024-07-25 12:15:03.694 [main] INFO  requestResponseLogger - Cookies: 
+2024-07-25 12:15:03.694 [main] INFO  requestResponseLogger - Path Params: {pathId=99999}
+2024-07-25 12:15:05.427 [main] INFO  requestResponseLogger - ========== RESPONSE ==============
+2024-07-25 12:15:05.428 [main] INFO  requestResponseLogger - Status Code: 404
+2024-07-25 12:15:05.428 [main] INFO  requestResponseLogger - Status Line: HTTP/1.1 404 Not Found
+2024-07-25 12:15:05.428 [main] INFO  requestResponseLogger - Headers: Date=Thu, 25 Jul 2024 06:45:04 GMT
+Content-Type=application/json; charset=utf-8
+Content-Length=2
+Connection=keep-alive
+Report-To={"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1721889904&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=HsjKv3lBVgn11xY%2B8%2FSrYIl0NO6ZaBwGGFs882XJ7xk%3D"}]}
+Reporting-Endpoints=heroku-nel=https://nel.heroku.com/reports?ts=1721889904&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=HsjKv3lBVgn11xY%2B8%2FSrYIl0NO6ZaBwGGFs882XJ7xk%3D
+Nel={"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By=Express
+X-Ratelimit-Limit=1000
+X-Ratelimit-Remaining=995
+X-Ratelimit-Reset=1721889951
+Vary=Origin, Accept-Encoding
+Access-Control-Allow-Credentials=true
+Cache-Control=max-age=43200
+Pragma=no-cache
+Expires=-1
+X-Content-Type-Options=nosniff
+Etag=W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+Via=1.1 vegur
+CF-Cache-Status=MISS
+Server=cloudflare
+CF-RAY=8a8a2f5f39a5278b-LYS
+alt-svc=h3=":443"; ma=86400
+2024-07-25 12:15:05.429 [main] INFO  requestResponseLogger - Cookies: {}
+2024-07-25 12:15:05.429 [main] INFO  requestResponseLogger - Body: {
+    
+}
+2024-07-25 12:15:05.432 [main] INFO  utils.Log4jFilter - Response: {
+    
+}
+2024-07-25 12:15:05.436 [main] INFO  utils.Log4jFilter - This test is intentionally skipped.
+2024-07-25 12:15:05.439 [main] INFO  utils.Log4jFilter - Starting test: Failing Update Post with non-existing ID
+2024-07-25 12:15:05.446 [main] INFO  requestResponseLogger - ========== REQUEST ==============
+2024-07-25 12:15:05.446 [main] INFO  requestResponseLogger - Method: PUT
+2024-07-25 12:15:05.447 [main] INFO  requestResponseLogger - URI: https://jsonplaceholder.typicode.com/posts/99999
+2024-07-25 12:15:05.449 [main] INFO  requestResponseLogger - Headers: Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json
+2024-07-25 12:15:05.449 [main] INFO  requestResponseLogger - Content-Type: application/json
+2024-07-25 12:15:05.449 [main] INFO  requestResponseLogger - Cookies: 
+2024-07-25 12:15:05.449 [main] INFO  requestResponseLogger - Path Params: {postId=99999}
+2024-07-25 12:15:05.449 [main] INFO  requestResponseLogger - Body: { "id": 99999, "title": "foo_updated", "body": "bar_updated", "userId": 1 }
+2024-07-25 12:15:07.101 [main] INFO  requestResponseLogger - ========== RESPONSE ==============
+2024-07-25 12:15:07.101 [main] INFO  requestResponseLogger - Status Code: 500
+2024-07-25 12:15:07.101 [main] INFO  requestResponseLogger - Status Line: HTTP/1.1 500 Internal Server Error
+2024-07-25 12:15:07.102 [main] INFO  requestResponseLogger - Headers: Date=Thu, 25 Jul 2024 06:45:06 GMT
+Content-Type=text/html; charset=utf-8
+Transfer-Encoding=chunked
+Connection=keep-alive
+Report-To={"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1721889906&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=KPRobA30q9tuAYKQOho89SwlY2fLNuvZuBuvqWssckQ%3D"}]}
+Reporting-Endpoints=heroku-nel=https://nel.heroku.com/reports?ts=1721889906&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=KPRobA30q9tuAYKQOho89SwlY2fLNuvZuBuvqWssckQ%3D
+Nel={"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By=Express
+X-Ratelimit-Limit=1000
+X-Ratelimit-Remaining=994
+X-Ratelimit-Reset=1721889951
+Vary=Origin, Accept-Encoding
+Access-Control-Allow-Credentials=true
+Cache-Control=no-cache
+Pragma=no-cache
+Expires=-1
+Via=1.1 vegur
+CF-Cache-Status=DYNAMIC
+Server=cloudflare
+CF-RAY=8a8a2f6d09a06a36-LYS
+alt-svc=h3=":443"; ma=86400
+2024-07-25 12:15:07.102 [main] INFO  requestResponseLogger - Cookies: {}
+2024-07-25 12:15:07.373 [main] INFO  requestResponseLogger - Body: <html>
+  <body>TypeError: Cannot read properties of undefined (reading 'id')
+    at update (/app/node_modules/json-server/lib/server/router/plural.js:262:24)
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at next (/app/node_modules/express/lib/router/route.js:137:13)
+    at next (/app/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/app/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at /app/node_modules/express/lib/router/index.js:281:22
+    at param (/app/node_modules/express/lib/router/index.js:354:14)
+    at param (/app/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/app/node_modules/express/lib/router/index.js:410:3)</body>
+</html>
+2024-07-25 12:15:07.387 [main] INFO  utils.Log4jFilter - This test is intentionally skipped.
+2024-07-25 12:15:07.392 [main] INFO  utils.Log4jFilter - Full URL: https://jsonplaceholder.typicode.com/posts/1
+2024-07-25 12:15:07.403 [main] INFO  requestResponseLogger - ========== REQUEST ==============
+2024-07-25 12:15:07.404 [main] INFO  requestResponseLogger - Method: GET
+2024-07-25 12:15:07.407 [main] INFO  requestResponseLogger - URI: https://jsonplaceholder.typicode.com/posts/1
+2024-07-25 12:15:07.407 [main] INFO  requestResponseLogger - Headers: Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json
+2024-07-25 12:15:07.408 [main] INFO  requestResponseLogger - Content-Type: application/json
+2024-07-25 12:15:07.408 [main] INFO  requestResponseLogger - Cookies: 
+2024-07-25 12:15:07.409 [main] INFO  requestResponseLogger - Path Params: {pathId=1}
+2024-07-25 12:15:08.229 [main] INFO  requestResponseLogger - ========== RESPONSE ==============
+2024-07-25 12:15:08.229 [main] INFO  requestResponseLogger - Status Code: 200
+2024-07-25 12:15:08.229 [main] INFO  requestResponseLogger - Status Line: HTTP/1.1 200 OK
+2024-07-25 12:15:08.229 [main] INFO  requestResponseLogger - Headers: Date=Thu, 25 Jul 2024 06:45:08 GMT
+Content-Type=application/json; charset=utf-8
+Transfer-Encoding=chunked
+Connection=keep-alive
+Report-To={"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1718656459&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=u6jg%2FMsrjlsgha%2BTP8gEVACdDgpDCdoW212kbLRnudc%3D"}]}
+Reporting-Endpoints=heroku-nel=https://nel.heroku.com/reports?ts=1718656459&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=u6jg%2FMsrjlsgha%2BTP8gEVACdDgpDCdoW212kbLRnudc%3D
+Nel={"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By=Express
+X-Ratelimit-Limit=1000
+X-Ratelimit-Remaining=999
+X-Ratelimit-Reset=1718656500
+Vary=Origin, Accept-Encoding
+Access-Control-Allow-Credentials=true
+Cache-Control=max-age=43200
+Pragma=no-cache
+Expires=-1
+X-Content-Type-Options=nosniff
+Etag=W/"124-yiKdLzqO5gfBrJFrcdJ8Yq0LGnU"
+Via=1.1 vegur
+CF-Cache-Status=HIT
+Age=7369
+Server=cloudflare
+CF-RAY=8a8a2f758b34bb03-MXP
+Content-Encoding=gzip
+alt-svc=h3=":443"; ma=86400
+2024-07-25 12:15:08.230 [main] INFO  requestResponseLogger - Cookies: {}
+2024-07-25 12:15:08.231 [main] INFO  requestResponseLogger - Body: {
+    "userId": 1,
+    "id": 1,
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}
+2024-07-25 12:15:08.268 [main] INFO  utils.Log4jFilter - Full URL: https://jsonplaceholder.typicode.com/posts/1
+2024-07-25 12:15:08.274 [main] INFO  requestResponseLogger - ========== REQUEST ==============
+2024-07-25 12:15:08.274 [main] INFO  requestResponseLogger - Method: GET
+2024-07-25 12:15:08.275 [main] INFO  requestResponseLogger - URI: https://jsonplaceholder.typicode.com/posts/1
+2024-07-25 12:15:08.276 [main] INFO  requestResponseLogger - Headers: Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json
+2024-07-25 12:15:08.276 [main] INFO  requestResponseLogger - Content-Type: application/json
+2024-07-25 12:15:08.276 [main] INFO  requestResponseLogger - Cookies: 
+2024-07-25 12:15:08.277 [main] INFO  requestResponseLogger - Path Params: {pathId=1}
+2024-07-25 12:15:08.914 [main] INFO  requestResponseLogger - ========== RESPONSE ==============
+2024-07-25 12:15:08.914 [main] INFO  requestResponseLogger - Status Code: 200
+2024-07-25 12:15:08.914 [main] INFO  requestResponseLogger - Status Line: HTTP/1.1 200 OK
+2024-07-25 12:15:08.914 [main] INFO  requestResponseLogger - Headers: Date=Thu, 25 Jul 2024 06:45:08 GMT
+Content-Type=application/json; charset=utf-8
+Transfer-Encoding=chunked
+Connection=keep-alive
+Report-To={"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1709587389&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=rOxl24izMsgca4iRxKZHdlwNCFZ%2BHJxrjdRxe5Iorpk%3D"}]}
+Reporting-Endpoints=heroku-nel=https://nel.heroku.com/reports?ts=1709587389&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=rOxl24izMsgca4iRxKZHdlwNCFZ%2BHJxrjdRxe5Iorpk%3D
+Nel={"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By=Express
+X-Ratelimit-Limit=1000
+X-Ratelimit-Remaining=999
+X-Ratelimit-Reset=1709587415
+Vary=Origin, Accept-Encoding
+Access-Control-Allow-Credentials=true
+Cache-Control=max-age=43200
+Pragma=no-cache
+Expires=-1
+X-Content-Type-Options=nosniff
+Etag=W/"124-yiKdLzqO5gfBrJFrcdJ8Yq0LGnU"
+Via=1.1 vegur
+CF-Cache-Status=HIT
+Age=3829
+Server=cloudflare
+CF-RAY=8a8a2f7a0a3d184c-MRS
+Content-Encoding=gzip
+alt-svc=h3=":443"; ma=86400
+2024-07-25 12:15:08.916 [main] INFO  requestResponseLogger - Cookies: {}
+2024-07-25 12:15:08.917 [main] INFO  requestResponseLogger - Body: {
+    "userId": 1,
+    "id": 1,
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}
+2024-07-25 12:25:47.617 [main] INFO  utils.Log4jFilter - Starting test: Create Post RestAssuredAutomation
+2024-07-25 12:25:47.622 [main] INFO  utils.Log4jFilter - Start date of test: Create Post Thu Jul 25 12:25:46 IST 2024
+2024-07-25 12:25:48.690 [main] INFO  requestResponseLogger - ========== REQUEST ==============
+2024-07-25 12:25:48.690 [main] INFO  requestResponseLogger - Method: POST
+2024-07-25 12:25:48.692 [main] INFO  requestResponseLogger - URI: https://jsonplaceholder.typicode.com/posts
+2024-07-25 12:25:48.692 [main] INFO  requestResponseLogger - Headers: Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json
+2024-07-25 12:25:48.694 [main] INFO  requestResponseLogger - Content-Type: application/json
+2024-07-25 12:25:48.694 [main] INFO  requestResponseLogger - Cookies: 
+2024-07-25 12:25:48.720 [main] INFO  requestResponseLogger - Body: { "title": "foo", "body": "bar", "userId": 1 }
+2024-07-25 12:25:50.685 [main] INFO  requestResponseLogger - ========== RESPONSE ==============
+2024-07-25 12:25:50.685 [main] INFO  requestResponseLogger - Status Code: 201
+2024-07-25 12:25:50.686 [main] INFO  requestResponseLogger - Status Line: HTTP/1.1 201 Created
+2024-07-25 12:25:50.686 [main] INFO  requestResponseLogger - Headers: Date=Thu, 25 Jul 2024 06:55:50 GMT
+Content-Type=application/json; charset=utf-8
+Content-Length=65
+Connection=keep-alive
+Report-To={"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1721890550&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Uulph0WdUH%2BAuyW1au8M8%2FXsVJc1DYFGsayY8%2BWKTdU%3D"}]}
+Reporting-Endpoints=heroku-nel=https://nel.heroku.com/reports?ts=1721890550&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Uulph0WdUH%2BAuyW1au8M8%2FXsVJc1DYFGsayY8%2BWKTdU%3D
+Nel={"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By=Express
+X-Ratelimit-Limit=1000
+X-Ratelimit-Remaining=999
+X-Ratelimit-Reset=1721890611
+Vary=Origin, X-HTTP-Method-Override, Accept-Encoding
+Access-Control-Allow-Credentials=true
+Cache-Control=no-cache
+Pragma=no-cache
+Expires=-1
+Access-Control-Expose-Headers=Location
+Location=https://jsonplaceholder.typicode.com/posts/101
+X-Content-Type-Options=nosniff
+Etag=W/"41-GDNaWfnVU6RZhpLbye0veBaqcHA"
+Via=1.1 vegur
+CF-Cache-Status=DYNAMIC
+Server=cloudflare
+CF-RAY=8a8a3f2439e10db2-MRS
+alt-svc=h3=":443"; ma=86400
+2024-07-25 12:25:50.703 [main] INFO  requestResponseLogger - Cookies: {}
+2024-07-25 12:25:50.773 [main] INFO  requestResponseLogger - Body: {
+    "title": "foo",
+    "body": "bar",
+    "userId": 1,
+    "id": 101
+}
+2024-07-25 12:25:51.940 [main] INFO  utils.Log4jFilter - Post created with ID: 101
+2024-07-25 12:25:51.943 [main] INFO  utils.Log4jFilter - Response : {
+    "title": "foo",
+    "body": "bar",
+    "userId": 1,
+    "id": 101
+}
+2024-07-25 12:25:52.123 [main] INFO  utils.Log4jFilter - Starting test: Read Post with ID 1
+2024-07-25 12:25:52.123 [main] INFO  utils.Log4jFilter - Full URL: https://jsonplaceholder.typicode.com/posts/1
+2024-07-25 12:25:52.162 [main] INFO  requestResponseLogger - ========== REQUEST ==============
+2024-07-25 12:25:52.162 [main] INFO  requestResponseLogger - Method: GET
+2024-07-25 12:25:52.165 [main] INFO  requestResponseLogger - URI: https://jsonplaceholder.typicode.com/posts/1
+2024-07-25 12:25:52.166 [main] INFO  requestResponseLogger - Headers: Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json
+2024-07-25 12:25:52.166 [main] INFO  requestResponseLogger - Content-Type: application/json
+2024-07-25 12:25:52.166 [main] INFO  requestResponseLogger - Cookies: 
+2024-07-25 12:25:52.168 [main] INFO  requestResponseLogger - Path Params: {pathId=1}
+2024-07-25 12:26:14.034 [main] INFO  requestResponseLogger - ========== RESPONSE ==============
+2024-07-25 12:26:14.035 [main] INFO  requestResponseLogger - Status Code: 200
+2024-07-25 12:26:14.035 [main] INFO  requestResponseLogger - Status Line: HTTP/1.1 200 OK
+2024-07-25 12:26:14.035 [main] INFO  requestResponseLogger - Headers: Date=Thu, 25 Jul 2024 06:56:13 GMT
+Content-Type=application/json; charset=utf-8
+Transfer-Encoding=chunked
+Connection=keep-alive
+Report-To={"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1718656459&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=u6jg%2FMsrjlsgha%2BTP8gEVACdDgpDCdoW212kbLRnudc%3D"}]}
+Reporting-Endpoints=heroku-nel=https://nel.heroku.com/reports?ts=1718656459&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=u6jg%2FMsrjlsgha%2BTP8gEVACdDgpDCdoW212kbLRnudc%3D
+Nel={"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By=Express
+X-Ratelimit-Limit=1000
+X-Ratelimit-Remaining=999
+X-Ratelimit-Reset=1718656500
+Vary=Origin, Accept-Encoding
+Access-Control-Allow-Credentials=true
+Cache-Control=max-age=43200
+Pragma=no-cache
+Expires=-1
+X-Content-Type-Options=nosniff
+Etag=W/"124-yiKdLzqO5gfBrJFrcdJ8Yq0LGnU"
+Via=1.1 vegur
+CF-Cache-Status=HIT
+Age=8034
+Server=cloudflare
+CF-RAY=8a8a3fb6facd0e8b-MXP
+Content-Encoding=gzip
+alt-svc=h3=":443"; ma=86400
+2024-07-25 12:26:14.035 [main] INFO  requestResponseLogger - Cookies: {}
+2024-07-25 12:26:14.038 [main] INFO  requestResponseLogger - Body: {
+    "userId": 1,
+    "id": 1,
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}
+2024-07-25 12:26:14.056 [main] INFO  utils.Log4jFilter - Starting test: Update Post with ID 1
+2024-07-25 12:26:14.065 [main] INFO  requestResponseLogger - ========== REQUEST ==============
+2024-07-25 12:26:14.065 [main] INFO  requestResponseLogger - Method: PUT
+2024-07-25 12:26:14.066 [main] INFO  requestResponseLogger - URI: https://jsonplaceholder.typicode.com/posts/1
+2024-07-25 12:26:14.066 [main] INFO  requestResponseLogger - Headers: Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json
+2024-07-25 12:26:14.066 [main] INFO  requestResponseLogger - Content-Type: application/json
+2024-07-25 12:26:14.066 [main] INFO  requestResponseLogger - Cookies: 
+2024-07-25 12:26:14.066 [main] INFO  requestResponseLogger - Path Params: {postId=1}
+2024-07-25 12:26:14.066 [main] INFO  requestResponseLogger - Body: { "id": 1, "title": "foo_updated", "body": "bar_updated", "userId": 1 }
+2024-07-25 12:26:36.300 [main] INFO  requestResponseLogger - ========== RESPONSE ==============
+2024-07-25 12:26:36.301 [main] INFO  requestResponseLogger - Status Code: 200
+2024-07-25 12:26:36.301 [main] INFO  requestResponseLogger - Status Line: HTTP/1.1 200 OK
+2024-07-25 12:26:36.301 [main] INFO  requestResponseLogger - Headers: Date=Thu, 25 Jul 2024 06:56:36 GMT
+Content-Type=application/json; charset=utf-8
+Transfer-Encoding=chunked
+Connection=keep-alive
+Report-To={"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1721890596&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=inV%2FsDLO0EXzB76Adt5DPz6jOg4DT3YowEG9SbsQw8I%3D"}]}
+Reporting-Endpoints=heroku-nel=https://nel.heroku.com/reports?ts=1721890596&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=inV%2FsDLO0EXzB76Adt5DPz6jOg4DT3YowEG9SbsQw8I%3D
+Nel={"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By=Express
+X-Ratelimit-Limit=1000
+X-Ratelimit-Remaining=998
+X-Ratelimit-Reset=1721890611
+Vary=Origin, Accept-Encoding
+Access-Control-Allow-Credentials=true
+Cache-Control=no-cache
+Pragma=no-cache
+Expires=-1
+X-Content-Type-Options=nosniff
+Etag=W/"4f-6/pAxRdZN+dgEcj34nJow0Zzx2c"
+Via=1.1 vegur
+CF-Cache-Status=DYNAMIC
+Server=cloudflare
+CF-RAY=8a8a40405aef374e-MXP
+Content-Encoding=gzip
+alt-svc=h3=":443"; ma=86400
+2024-07-25 12:26:36.301 [main] INFO  requestResponseLogger - Cookies: {}
+2024-07-25 12:26:36.301 [main] INFO  requestResponseLogger - Body: {
+    "id": 1,
+    "title": "foo_updated",
+    "body": "bar_updated",
+    "userId": 1
+}
+2024-07-25 12:26:36.366 [main] INFO  requestResponseLogger - ========== REQUEST ==============
+2024-07-25 12:26:36.366 [main] INFO  requestResponseLogger - Method: DELETE
+2024-07-25 12:26:36.367 [main] INFO  requestResponseLogger - URI: https://jsonplaceholder.typicode.com/posts/1
+2024-07-25 12:26:36.367 [main] INFO  requestResponseLogger - Headers: Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json
+2024-07-25 12:26:36.367 [main] INFO  requestResponseLogger - Content-Type: application/json
+2024-07-25 12:26:36.368 [main] INFO  requestResponseLogger - Cookies: 
+2024-07-25 12:26:36.368 [main] INFO  requestResponseLogger - Path Params: {postId=1}
+2024-07-25 12:27:00.540 [main] INFO  requestResponseLogger - ========== RESPONSE ==============
+2024-07-25 12:27:00.540 [main] INFO  requestResponseLogger - Status Code: 200
+2024-07-25 12:27:00.540 [main] INFO  requestResponseLogger - Status Line: HTTP/1.1 200 OK
+2024-07-25 12:27:00.540 [main] INFO  requestResponseLogger - Headers: Date=Thu, 25 Jul 2024 06:57:00 GMT
+Content-Type=application/json; charset=utf-8
+Content-Length=2
+Connection=keep-alive
+Report-To={"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1721890620&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=gQtNCN7if7TWPdQQiNb4jOkgQcR7nVzFVN7YSRd4tdQ%3D"}]}
+Reporting-Endpoints=heroku-nel=https://nel.heroku.com/reports?ts=1721890620&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=gQtNCN7if7TWPdQQiNb4jOkgQcR7nVzFVN7YSRd4tdQ%3D
+Nel={"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By=Express
+X-Ratelimit-Limit=1000
+X-Ratelimit-Remaining=999
+X-Ratelimit-Reset=1721890671
+Vary=Origin, Accept-Encoding
+Access-Control-Allow-Credentials=true
+Cache-Control=no-cache
+Pragma=no-cache
+Expires=-1
+X-Content-Type-Options=nosniff
+Etag=W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+Via=1.1 vegur
+cf-cache-status=DYNAMIC
+Server=cloudflare
+CF-RAY=8a8a40d9090b4c44-MXP
+alt-svc=h3=":443"; ma=86400
+2024-07-25 12:27:00.541 [main] INFO  requestResponseLogger - Cookies: {}
+2024-07-25 12:27:00.541 [main] INFO  requestResponseLogger - Body: {
+    
+}
+2024-07-25 12:27:00.545 [main] INFO  utils.Log4jFilter - Starting test: Failing Create Post
+2024-07-25 12:27:00.550 [main] INFO  requestResponseLogger - ========== REQUEST ==============
+2024-07-25 12:27:00.551 [main] INFO  requestResponseLogger - Method: POST
+2024-07-25 12:27:00.551 [main] INFO  requestResponseLogger - URI: https://jsonplaceholder.typicode.com/posts
+2024-07-25 12:27:00.551 [main] INFO  requestResponseLogger - Headers: Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json
+2024-07-25 12:27:00.552 [main] INFO  requestResponseLogger - Content-Type: application/json
+2024-07-25 12:27:00.552 [main] INFO  requestResponseLogger - Cookies: 
+2024-07-25 12:27:00.552 [main] INFO  requestResponseLogger - Body: { "title": "foo", "body": "bar" }
+2024-07-25 12:27:01.870 [main] INFO  requestResponseLogger - ========== RESPONSE ==============
+2024-07-25 12:27:01.870 [main] INFO  requestResponseLogger - Status Code: 201
+2024-07-25 12:27:01.870 [main] INFO  requestResponseLogger - Status Line: HTTP/1.1 201 Created
+2024-07-25 12:27:01.870 [main] INFO  requestResponseLogger - Headers: Date=Thu, 25 Jul 2024 06:57:01 GMT
+Content-Type=application/json; charset=utf-8
+Content-Length=50
+Connection=keep-alive
+Report-To={"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1721890621&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=TKOn6iu8fcgVLgCpP3CcAd9Jrnb%2F1ofUCJvyXqsK1KY%3D"}]}
+Reporting-Endpoints=heroku-nel=https://nel.heroku.com/reports?ts=1721890621&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=TKOn6iu8fcgVLgCpP3CcAd9Jrnb%2F1ofUCJvyXqsK1KY%3D
+Nel={"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By=Express
+X-Ratelimit-Limit=1000
+X-Ratelimit-Remaining=998
+X-Ratelimit-Reset=1721890671
+Vary=Origin, X-HTTP-Method-Override, Accept-Encoding
+Access-Control-Allow-Credentials=true
+Cache-Control=no-cache
+Pragma=no-cache
+Expires=-1
+Access-Control-Expose-Headers=Location
+Location=https://jsonplaceholder.typicode.com/posts/101
+X-Content-Type-Options=nosniff
+Etag=W/"32-nJR3u31qpyK9Q43owc5bvZFyisY"
+Via=1.1 vegur
+CF-Cache-Status=DYNAMIC
+Server=cloudflare
+CF-RAY=8a8a40e048530da7-MRS
+alt-svc=h3=":443"; ma=86400
+2024-07-25 12:27:01.870 [main] INFO  requestResponseLogger - Cookies: {}
+2024-07-25 12:27:01.871 [main] INFO  requestResponseLogger - Body: {
+    "title": "foo",
+    "body": "bar",
+    "id": 101
+}
+2024-07-25 12:27:01.897 [main] INFO  utils.Log4jFilter - This test is intentionally skipped.
+2024-07-25 12:27:01.900 [main] INFO  utils.Log4jFilter - Starting test: Failing Read Post with non-existing ID
+2024-07-25 12:27:01.906 [main] INFO  requestResponseLogger - ========== REQUEST ==============
+2024-07-25 12:27:01.906 [main] INFO  requestResponseLogger - Method: GET
+2024-07-25 12:27:01.906 [main] INFO  requestResponseLogger - URI: https://jsonplaceholder.typicode.com/posts/99999
+2024-07-25 12:27:01.907 [main] INFO  requestResponseLogger - Headers: Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json
+2024-07-25 12:27:01.907 [main] INFO  requestResponseLogger - Content-Type: application/json
+2024-07-25 12:27:01.907 [main] INFO  requestResponseLogger - Cookies: 
+2024-07-25 12:27:01.907 [main] INFO  requestResponseLogger - Path Params: {pathId=99999}
+2024-07-25 12:27:24.231 [main] INFO  requestResponseLogger - ========== RESPONSE ==============
+2024-07-25 12:27:24.231 [main] INFO  requestResponseLogger - Status Code: 404
+2024-07-25 12:27:24.232 [main] INFO  requestResponseLogger - Status Line: HTTP/1.1 404 Not Found
+2024-07-25 12:27:24.232 [main] INFO  requestResponseLogger - Headers: Date=Thu, 25 Jul 2024 06:57:24 GMT
+Content-Type=application/json; charset=utf-8
+Content-Length=2
+Connection=keep-alive
+Report-To={"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1721890644&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=rcaR2F7agjo%2FIgY6Aeg5UkAy51%2BcWITd37FQwPVStXQ%3D"}]}
+Reporting-Endpoints=heroku-nel=https://nel.heroku.com/reports?ts=1721890644&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=rcaR2F7agjo%2FIgY6Aeg5UkAy51%2BcWITd37FQwPVStXQ%3D
+Nel={"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By=Express
+X-Ratelimit-Limit=1000
+X-Ratelimit-Remaining=997
+X-Ratelimit-Reset=1721890671
+Vary=Origin, Accept-Encoding
+Access-Control-Allow-Credentials=true
+Cache-Control=max-age=43200
+Pragma=no-cache
+Expires=-1
+X-Content-Type-Options=nosniff
+Etag=W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+Via=1.1 vegur
+CF-Cache-Status=MISS
+Server=cloudflare
+CF-RAY=8a8a416c0c4c1856-MRS
+alt-svc=h3=":443"; ma=86400
+2024-07-25 12:27:24.232 [main] INFO  requestResponseLogger - Cookies: {}
+2024-07-25 12:27:24.232 [main] INFO  requestResponseLogger - Body: {
+    
+}
+2024-07-25 12:27:24.234 [main] INFO  utils.Log4jFilter - Response: {
+    
+}
+2024-07-25 12:27:24.236 [main] INFO  utils.Log4jFilter - This test is intentionally skipped.
+2024-07-25 12:27:24.240 [main] INFO  utils.Log4jFilter - Starting test: Failing Update Post with non-existing ID
+2024-07-25 12:27:24.243 [main] INFO  requestResponseLogger - ========== REQUEST ==============
+2024-07-25 12:27:24.243 [main] INFO  requestResponseLogger - Method: PUT
+2024-07-25 12:27:24.244 [main] INFO  requestResponseLogger - URI: https://jsonplaceholder.typicode.com/posts/99999
+2024-07-25 12:27:24.244 [main] INFO  requestResponseLogger - Headers: Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json
+2024-07-25 12:27:24.244 [main] INFO  requestResponseLogger - Content-Type: application/json
+2024-07-25 12:27:24.244 [main] INFO  requestResponseLogger - Cookies: 
+2024-07-25 12:27:24.245 [main] INFO  requestResponseLogger - Path Params: {postId=99999}
+2024-07-25 12:27:24.245 [main] INFO  requestResponseLogger - Body: { "id": 99999, "title": "foo_updated", "body": "bar_updated", "userId": 1 }
+2024-07-25 12:27:46.308 [main] INFO  requestResponseLogger - ========== RESPONSE ==============
+2024-07-25 12:27:46.308 [main] INFO  requestResponseLogger - Status Code: 500
+2024-07-25 12:27:46.308 [main] INFO  requestResponseLogger - Status Line: HTTP/1.1 500 Internal Server Error
+2024-07-25 12:27:46.309 [main] INFO  requestResponseLogger - Headers: Date=Thu, 25 Jul 2024 06:57:46 GMT
+Content-Type=text/html; charset=utf-8
+Transfer-Encoding=chunked
+Connection=keep-alive
+Report-To={"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1721890666&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=MSPb%2Fpc43muVWq%2Bm7d2SiNAcY7BrbSTiJ3PXLLNJEK8%3D"}]}
+Reporting-Endpoints=heroku-nel=https://nel.heroku.com/reports?ts=1721890666&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=MSPb%2Fpc43muVWq%2Bm7d2SiNAcY7BrbSTiJ3PXLLNJEK8%3D
+Nel={"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By=Express
+X-Ratelimit-Limit=1000
+X-Ratelimit-Remaining=996
+X-Ratelimit-Reset=1721890671
+Vary=Origin, Accept-Encoding
+Access-Control-Allow-Credentials=true
+Cache-Control=no-cache
+Pragma=no-cache
+Expires=-1
+Via=1.1 vegur
+CF-Cache-Status=DYNAMIC
+Server=cloudflare
+CF-RAY=8a8a41f5dc890e41-MXP
+alt-svc=h3=":443"; ma=86400
+2024-07-25 12:27:46.309 [main] INFO  requestResponseLogger - Cookies: {}
+2024-07-25 12:27:46.592 [main] INFO  requestResponseLogger - Body: <html>
+  <body>TypeError: Cannot read properties of undefined (reading 'id')
+    at update (/app/node_modules/json-server/lib/server/router/plural.js:262:24)
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at next (/app/node_modules/express/lib/router/route.js:137:13)
+    at next (/app/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/app/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at /app/node_modules/express/lib/router/index.js:281:22
+    at param (/app/node_modules/express/lib/router/index.js:354:14)
+    at param (/app/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/app/node_modules/express/lib/router/index.js:410:3)</body>
+</html>
+2024-07-25 12:27:46.600 [main] INFO  utils.Log4jFilter - This test is intentionally skipped.
+2024-07-25 12:27:46.603 [main] INFO  utils.Log4jFilter - Full URL: https://jsonplaceholder.typicode.com/posts/1
+2024-07-25 12:27:46.610 [main] INFO  requestResponseLogger - ========== REQUEST ==============
+2024-07-25 12:27:46.610 [main] INFO  requestResponseLogger - Method: GET
+2024-07-25 12:27:46.612 [main] INFO  requestResponseLogger - URI: https://jsonplaceholder.typicode.com/posts/1
+2024-07-25 12:27:46.612 [main] INFO  requestResponseLogger - Headers: Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json
+2024-07-25 12:27:46.612 [main] INFO  requestResponseLogger - Content-Type: application/json
+2024-07-25 12:27:46.612 [main] INFO  requestResponseLogger - Cookies: 
+2024-07-25 12:27:46.613 [main] INFO  requestResponseLogger - Path Params: {pathId=1}
+2024-07-25 12:27:47.833 [main] INFO  requestResponseLogger - ========== RESPONSE ==============
+2024-07-25 12:27:47.834 [main] INFO  requestResponseLogger - Status Code: 200
+2024-07-25 12:27:47.834 [main] INFO  requestResponseLogger - Status Line: HTTP/1.1 200 OK
+2024-07-25 12:27:47.834 [main] INFO  requestResponseLogger - Headers: Date=Thu, 25 Jul 2024 06:57:47 GMT
+Content-Type=application/json; charset=utf-8
+Transfer-Encoding=chunked
+Connection=keep-alive
+Report-To={"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1709587389&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=rOxl24izMsgca4iRxKZHdlwNCFZ%2BHJxrjdRxe5Iorpk%3D"}]}
+Reporting-Endpoints=heroku-nel=https://nel.heroku.com/reports?ts=1709587389&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=rOxl24izMsgca4iRxKZHdlwNCFZ%2BHJxrjdRxe5Iorpk%3D
+Nel={"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By=Express
+X-Ratelimit-Limit=1000
+X-Ratelimit-Remaining=999
+X-Ratelimit-Reset=1709587415
+Vary=Origin, Accept-Encoding
+Access-Control-Allow-Credentials=true
+Cache-Control=max-age=43200
+Pragma=no-cache
+Expires=-1
+X-Content-Type-Options=nosniff
+Etag=W/"124-yiKdLzqO5gfBrJFrcdJ8Yq0LGnU"
+Via=1.1 vegur
+CF-Cache-Status=HIT
+Age=4588
+Server=cloudflare
+CF-RAY=8a8a42001da90787-MRS
+Content-Encoding=gzip
+alt-svc=h3=":443"; ma=86400
+2024-07-25 12:27:47.834 [main] INFO  requestResponseLogger - Cookies: {}
+2024-07-25 12:27:47.834 [main] INFO  requestResponseLogger - Body: {
+    "userId": 1,
+    "id": 1,
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}
+2024-07-25 12:27:47.862 [main] INFO  utils.Log4jFilter - Full URL: https://jsonplaceholder.typicode.com/posts/1
+2024-07-25 12:27:47.866 [main] INFO  requestResponseLogger - ========== REQUEST ==============
+2024-07-25 12:27:47.866 [main] INFO  requestResponseLogger - Method: GET
+2024-07-25 12:27:47.867 [main] INFO  requestResponseLogger - URI: https://jsonplaceholder.typicode.com/posts/1
+2024-07-25 12:27:47.867 [main] INFO  requestResponseLogger - Headers: Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json
+2024-07-25 12:27:47.867 [main] INFO  requestResponseLogger - Content-Type: application/json
+2024-07-25 12:27:47.867 [main] INFO  requestResponseLogger - Cookies: 
+2024-07-25 12:27:47.868 [main] INFO  requestResponseLogger - Path Params: {pathId=1}
+2024-07-25 12:27:50.350 [main] INFO  requestResponseLogger - ========== RESPONSE ==============
+2024-07-25 12:27:50.350 [main] INFO  requestResponseLogger - Status Code: 200
+2024-07-25 12:27:50.350 [main] INFO  requestResponseLogger - Status Line: HTTP/1.1 200 OK
+2024-07-25 12:27:50.350 [main] INFO  requestResponseLogger - Headers: Date=Thu, 25 Jul 2024 06:57:49 GMT
+Content-Type=application/json; charset=utf-8
+Transfer-Encoding=chunked
+Connection=keep-alive
+Report-To={"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1718656459&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=u6jg%2FMsrjlsgha%2BTP8gEVACdDgpDCdoW212kbLRnudc%3D"}]}
+Reporting-Endpoints=heroku-nel=https://nel.heroku.com/reports?ts=1718656459&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=u6jg%2FMsrjlsgha%2BTP8gEVACdDgpDCdoW212kbLRnudc%3D
+Nel={"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By=Express
+X-Ratelimit-Limit=1000
+X-Ratelimit-Remaining=999
+X-Ratelimit-Reset=1718656500
+Vary=Origin, Accept-Encoding
+Access-Control-Allow-Credentials=true
+Cache-Control=max-age=43200
+Pragma=no-cache
+Expires=-1
+X-Content-Type-Options=nosniff
+Etag=W/"124-yiKdLzqO5gfBrJFrcdJ8Yq0LGnU"
+Via=1.1 vegur
+CF-Cache-Status=HIT
+Age=8130
+Server=cloudflare
+CF-RAY=8a8a420f0f7c5272-MXP
+Content-Encoding=gzip
+alt-svc=h3=":443"; ma=86400
+2024-07-25 12:27:50.351 [main] INFO  requestResponseLogger - Cookies: {}
+2024-07-25 12:27:50.352 [main] INFO  requestResponseLogger - Body: {
+    "userId": 1,
+    "id": 1,
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}
+2024-07-25 12:50:17.722 [main] INFO  utils.Log4jFilter - Starting test: Create Post RestAssuredAutomation
+2024-07-25 12:50:17.727 [main] INFO  utils.Log4jFilter - Start date of test: Create Post Thu Jul 25 12:50:16 IST 2024
+2024-07-25 12:50:18.553 [main] INFO  requestResponseLogger - ========== REQUEST ==============
+2024-07-25 12:50:18.554 [main] INFO  requestResponseLogger - Method: POST
+2024-07-25 12:50:18.555 [main] INFO  requestResponseLogger - URI: https://jsonplaceholder.typicode.com/posts
+2024-07-25 12:50:18.555 [main] INFO  requestResponseLogger - Headers: Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json
+2024-07-25 12:50:18.556 [main] INFO  requestResponseLogger - Content-Type: application/json
+2024-07-25 12:50:18.556 [main] INFO  requestResponseLogger - Cookies: 
+2024-07-25 12:50:18.612 [main] INFO  requestResponseLogger - Body: { "title": "foo", "body": "bar", "userId": 1 }
+2024-07-25 12:50:21.030 [main] INFO  requestResponseLogger - ========== RESPONSE ==============
+2024-07-25 12:50:21.031 [main] INFO  requestResponseLogger - Status Code: 201
+2024-07-25 12:50:21.032 [main] INFO  requestResponseLogger - Status Line: HTTP/1.1 201 Created
+2024-07-25 12:50:21.033 [main] INFO  requestResponseLogger - Headers: Date=Thu, 25 Jul 2024 07:20:20 GMT
+Content-Type=application/json; charset=utf-8
+Content-Length=65
+Connection=keep-alive
+Report-To={"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1721892020&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=YmZbvMnAs2oI5%2FOlP6r0xd4mhV1PxosOmd3gqAYm3ZU%3D"}]}
+Reporting-Endpoints=heroku-nel=https://nel.heroku.com/reports?ts=1721892020&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=YmZbvMnAs2oI5%2FOlP6r0xd4mhV1PxosOmd3gqAYm3ZU%3D
+Nel={"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By=Express
+X-Ratelimit-Limit=1000
+X-Ratelimit-Remaining=999
+X-Ratelimit-Reset=1721892051
+Vary=Origin, X-HTTP-Method-Override, Accept-Encoding
+Access-Control-Allow-Credentials=true
+Cache-Control=no-cache
+Pragma=no-cache
+Expires=-1
+Access-Control-Expose-Headers=Location
+Location=https://jsonplaceholder.typicode.com/posts/101
+X-Content-Type-Options=nosniff
+Etag=W/"41-GDNaWfnVU6RZhpLbye0veBaqcHA"
+Via=1.1 vegur
+CF-Cache-Status=DYNAMIC
+Server=cloudflare
+CF-RAY=8a8a6309cfe64bf1-MXP
+alt-svc=h3=":443"; ma=86400
+2024-07-25 12:50:21.048 [main] INFO  requestResponseLogger - Cookies: {}
+2024-07-25 12:50:21.104 [main] INFO  requestResponseLogger - Body: {
+    "title": "foo",
+    "body": "bar",
+    "userId": 1,
+    "id": 101
+}
+2024-07-25 12:50:22.107 [main] INFO  utils.Log4jFilter - Post created with ID: 101
+2024-07-25 12:50:22.109 [main] INFO  utils.Log4jFilter - Response : {
+    "title": "foo",
+    "body": "bar",
+    "userId": 1,
+    "id": 101
+}
+2024-07-25 12:50:22.197 [main] INFO  utils.Log4jFilter - Starting test: Read Post with ID 1
+2024-07-25 12:50:22.197 [main] INFO  utils.Log4jFilter - Full URL: https://jsonplaceholder.typicode.com/posts/1
+2024-07-25 12:50:22.221 [main] INFO  requestResponseLogger - ========== REQUEST ==============
+2024-07-25 12:50:22.222 [main] INFO  requestResponseLogger - Method: GET
+2024-07-25 12:50:22.224 [main] INFO  requestResponseLogger - URI: https://jsonplaceholder.typicode.com/posts/1
+2024-07-25 12:50:22.225 [main] INFO  requestResponseLogger - Headers: Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json
+2024-07-25 12:50:22.228 [main] INFO  requestResponseLogger - Content-Type: application/json
+2024-07-25 12:50:22.228 [main] INFO  requestResponseLogger - Cookies: 
+2024-07-25 12:50:22.229 [main] INFO  requestResponseLogger - Path Params: {pathId=1}
+2024-07-25 12:50:24.064 [main] INFO  requestResponseLogger - ========== RESPONSE ==============
+2024-07-25 12:50:24.064 [main] INFO  requestResponseLogger - Status Code: 200
+2024-07-25 12:50:24.064 [main] INFO  requestResponseLogger - Status Line: HTTP/1.1 200 OK
+2024-07-25 12:50:24.064 [main] INFO  requestResponseLogger - Headers: Date=Thu, 25 Jul 2024 07:20:23 GMT
+Content-Type=application/json; charset=utf-8
+Transfer-Encoding=chunked
+Connection=keep-alive
+Report-To={"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1709587389&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=rOxl24izMsgca4iRxKZHdlwNCFZ%2BHJxrjdRxe5Iorpk%3D"}]}
+Reporting-Endpoints=heroku-nel=https://nel.heroku.com/reports?ts=1709587389&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=rOxl24izMsgca4iRxKZHdlwNCFZ%2BHJxrjdRxe5Iorpk%3D
+Nel={"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By=Express
+X-Ratelimit-Limit=1000
+X-Ratelimit-Remaining=999
+X-Ratelimit-Reset=1709587415
+Vary=Origin, Accept-Encoding
+Access-Control-Allow-Credentials=true
+Cache-Control=max-age=43200
+Pragma=no-cache
+Expires=-1
+X-Content-Type-Options=nosniff
+Etag=W/"124-yiKdLzqO5gfBrJFrcdJ8Yq0LGnU"
+Via=1.1 vegur
+CF-Cache-Status=HIT
+Age=5944
+Server=cloudflare
+CF-RAY=8a8a631dce15077b-MRS
+Content-Encoding=gzip
+alt-svc=h3=":443"; ma=86400
+2024-07-25 12:50:24.064 [main] INFO  requestResponseLogger - Cookies: {}
+2024-07-25 12:50:24.066 [main] INFO  requestResponseLogger - Body: {
+    "userId": 1,
+    "id": 1,
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}
+2024-07-25 12:50:24.088 [main] INFO  utils.Log4jFilter - Starting test: Update Post with ID 1
+2024-07-25 12:50:24.097 [main] INFO  requestResponseLogger - ========== REQUEST ==============
+2024-07-25 12:50:24.097 [main] INFO  requestResponseLogger - Method: PUT
+2024-07-25 12:50:24.097 [main] INFO  requestResponseLogger - URI: https://jsonplaceholder.typicode.com/posts/1
+2024-07-25 12:50:24.098 [main] INFO  requestResponseLogger - Headers: Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json
+2024-07-25 12:50:24.098 [main] INFO  requestResponseLogger - Content-Type: application/json
+2024-07-25 12:50:24.098 [main] INFO  requestResponseLogger - Cookies: 
+2024-07-25 12:50:24.098 [main] INFO  requestResponseLogger - Path Params: {postId=1}
+2024-07-25 12:50:24.099 [main] INFO  requestResponseLogger - Body: { "id": 1, "title": "foo_updated", "body": "bar_updated", "userId": 1 }
+2024-07-25 12:50:25.651 [main] INFO  requestResponseLogger - ========== RESPONSE ==============
+2024-07-25 12:50:25.652 [main] INFO  requestResponseLogger - Status Code: 200
+2024-07-25 12:50:25.652 [main] INFO  requestResponseLogger - Status Line: HTTP/1.1 200 OK
+2024-07-25 12:50:25.652 [main] INFO  requestResponseLogger - Headers: Date=Thu, 25 Jul 2024 07:20:25 GMT
+Content-Type=application/json; charset=utf-8
+Transfer-Encoding=chunked
+Connection=keep-alive
+Report-To={"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1721892025&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=SRuTWjyQzbXSPZ6SK8qOxh9JAONTEzDHJGOlBw6HQcE%3D"}]}
+Reporting-Endpoints=heroku-nel=https://nel.heroku.com/reports?ts=1721892025&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=SRuTWjyQzbXSPZ6SK8qOxh9JAONTEzDHJGOlBw6HQcE%3D
+Nel={"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By=Express
+X-Ratelimit-Limit=1000
+X-Ratelimit-Remaining=998
+X-Ratelimit-Reset=1721892051
+Vary=Origin, Accept-Encoding
+Access-Control-Allow-Credentials=true
+Cache-Control=no-cache
+Pragma=no-cache
+Expires=-1
+X-Content-Type-Options=nosniff
+Etag=W/"4f-6/pAxRdZN+dgEcj34nJow0Zzx2c"
+Via=1.1 vegur
+CF-Cache-Status=DYNAMIC
+Server=cloudflare
+CF-RAY=8a8a6326dc7a0e46-MXP
+Content-Encoding=gzip
+alt-svc=h3=":443"; ma=86400
+2024-07-25 12:50:25.652 [main] INFO  requestResponseLogger - Cookies: {}
+2024-07-25 12:50:25.653 [main] INFO  requestResponseLogger - Body: {
+    "id": 1,
+    "title": "foo_updated",
+    "body": "bar_updated",
+    "userId": 1
+}
+2024-07-25 12:50:25.753 [main] INFO  requestResponseLogger - ========== REQUEST ==============
+2024-07-25 12:50:25.753 [main] INFO  requestResponseLogger - Method: DELETE
+2024-07-25 12:50:25.753 [main] INFO  requestResponseLogger - URI: https://jsonplaceholder.typicode.com/posts/1
+2024-07-25 12:50:25.754 [main] INFO  requestResponseLogger - Headers: Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json
+2024-07-25 12:50:25.754 [main] INFO  requestResponseLogger - Content-Type: application/json
+2024-07-25 12:50:25.754 [main] INFO  requestResponseLogger - Cookies: 
+2024-07-25 12:50:25.754 [main] INFO  requestResponseLogger - Path Params: {postId=1}
+2024-07-25 12:50:48.014 [main] INFO  requestResponseLogger - ========== RESPONSE ==============
+2024-07-25 12:50:48.015 [main] INFO  requestResponseLogger - Status Code: 200
+2024-07-25 12:50:48.015 [main] INFO  requestResponseLogger - Status Line: HTTP/1.1 200 OK
+2024-07-25 12:50:48.015 [main] INFO  requestResponseLogger - Headers: Date=Thu, 25 Jul 2024 07:20:47 GMT
+Content-Type=application/json; charset=utf-8
+Content-Length=2
+Connection=keep-alive
+Report-To={"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1721892047&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=xtJP7ZsXPTmO3Vy7qWCoswSrMKD%2FmjofFxkyT6wB27w%3D"}]}
+Reporting-Endpoints=heroku-nel=https://nel.heroku.com/reports?ts=1721892047&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=xtJP7ZsXPTmO3Vy7qWCoswSrMKD%2FmjofFxkyT6wB27w%3D
+Nel={"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By=Express
+X-Ratelimit-Limit=1000
+X-Ratelimit-Remaining=997
+X-Ratelimit-Reset=1721892051
+Vary=Origin, Accept-Encoding
+Access-Control-Allow-Credentials=true
+Cache-Control=no-cache
+Pragma=no-cache
+Expires=-1
+X-Content-Type-Options=nosniff
+Etag=W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+Via=1.1 vegur
+CF-Cache-Status=DYNAMIC
+Server=cloudflare
+CF-RAY=8a8a63b1a8ea4c3f-MXP
+alt-svc=h3=":443"; ma=86400
+2024-07-25 12:50:48.015 [main] INFO  requestResponseLogger - Cookies: {}
+2024-07-25 12:50:48.016 [main] INFO  requestResponseLogger - Body: {
+    
+}
+2024-07-25 12:50:48.020 [main] INFO  utils.Log4jFilter - Starting test: Failing Create Post
+2024-07-25 12:50:48.023 [main] INFO  requestResponseLogger - ========== REQUEST ==============
+2024-07-25 12:50:48.023 [main] INFO  requestResponseLogger - Method: POST
+2024-07-25 12:50:48.023 [main] INFO  requestResponseLogger - URI: https://jsonplaceholder.typicode.com/posts
+2024-07-25 12:50:48.024 [main] INFO  requestResponseLogger - Headers: Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json
+2024-07-25 12:50:48.024 [main] INFO  requestResponseLogger - Content-Type: application/json
+2024-07-25 12:50:48.024 [main] INFO  requestResponseLogger - Cookies: 
+2024-07-25 12:50:48.024 [main] INFO  requestResponseLogger - Body: { "title": "foo", "body": "bar" }
+2024-07-25 12:50:49.680 [main] INFO  requestResponseLogger - ========== RESPONSE ==============
+2024-07-25 12:50:49.680 [main] INFO  requestResponseLogger - Status Code: 201
+2024-07-25 12:50:49.681 [main] INFO  requestResponseLogger - Status Line: HTTP/1.1 201 Created
+2024-07-25 12:50:49.682 [main] INFO  requestResponseLogger - Headers: Date=Thu, 25 Jul 2024 07:20:49 GMT
+Content-Type=application/json; charset=utf-8
+Content-Length=50
+Connection=keep-alive
+Report-To={"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1721892049&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=v02omqEOuGqZazPmANATFqyBeoHwwlLvhBlSBLnE3WQ%3D"}]}
+Reporting-Endpoints=heroku-nel=https://nel.heroku.com/reports?ts=1721892049&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=v02omqEOuGqZazPmANATFqyBeoHwwlLvhBlSBLnE3WQ%3D
+Nel={"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By=Express
+X-Ratelimit-Limit=1000
+X-Ratelimit-Remaining=996
+X-Ratelimit-Reset=1721892051
+Vary=Origin, X-HTTP-Method-Override, Accept-Encoding
+Access-Control-Allow-Credentials=true
+Cache-Control=no-cache
+Pragma=no-cache
+Expires=-1
+Access-Control-Expose-Headers=Location
+Location=https://jsonplaceholder.typicode.com/posts/101
+X-Content-Type-Options=nosniff
+Etag=W/"32-nJR3u31qpyK9Q43owc5bvZFyisY"
+Via=1.1 vegur
+CF-Cache-Status=DYNAMIC
+Server=cloudflare
+CF-RAY=8a8a63bbf8740e42-MXP
+alt-svc=h3=":443"; ma=86400
+2024-07-25 12:50:49.683 [main] INFO  requestResponseLogger - Cookies: {}
+2024-07-25 12:50:49.684 [main] INFO  requestResponseLogger - Body: {
+    "title": "foo",
+    "body": "bar",
+    "id": 101
+}
+2024-07-25 12:50:49.719 [main] INFO  utils.Log4jFilter - This test is intentionally skipped.
+2024-07-25 12:50:49.721 [main] INFO  utils.Log4jFilter - Starting test: Failing Read Post with non-existing ID
+2024-07-25 12:50:49.726 [main] INFO  requestResponseLogger - ========== REQUEST ==============
+2024-07-25 12:50:49.726 [main] INFO  requestResponseLogger - Method: GET
+2024-07-25 12:50:49.727 [main] INFO  requestResponseLogger - URI: https://jsonplaceholder.typicode.com/posts/99999
+2024-07-25 12:50:49.728 [main] INFO  requestResponseLogger - Headers: Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json
+2024-07-25 12:50:49.728 [main] INFO  requestResponseLogger - Content-Type: application/json
+2024-07-25 12:50:49.728 [main] INFO  requestResponseLogger - Cookies: 
+2024-07-25 12:50:49.728 [main] INFO  requestResponseLogger - Path Params: {pathId=99999}
+2024-07-25 12:50:50.372 [main] INFO  requestResponseLogger - ========== RESPONSE ==============
+2024-07-25 12:50:50.372 [main] INFO  requestResponseLogger - Status Code: 404
+2024-07-25 12:50:50.373 [main] INFO  requestResponseLogger - Status Line: HTTP/1.1 404 Not Found
+2024-07-25 12:50:50.373 [main] INFO  requestResponseLogger - Headers: Date=Thu, 25 Jul 2024 07:20:50 GMT
+Content-Type=application/json; charset=utf-8
+Content-Length=2
+Connection=keep-alive
+Report-To={"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1721889904&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=HsjKv3lBVgn11xY%2B8%2FSrYIl0NO6ZaBwGGFs882XJ7xk%3D"}]}
+Reporting-Endpoints=heroku-nel=https://nel.heroku.com/reports?ts=1721889904&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=HsjKv3lBVgn11xY%2B8%2FSrYIl0NO6ZaBwGGFs882XJ7xk%3D
+Nel={"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By=Express
+X-Ratelimit-Limit=1000
+X-Ratelimit-Remaining=995
+X-Ratelimit-Reset=1721889951
+Vary=Origin, Accept-Encoding
+Access-Control-Allow-Credentials=true
+Cache-Control=max-age=43200
+Pragma=no-cache
+Expires=-1
+X-Content-Type-Options=nosniff
+Etag=W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+Via=1.1 vegur
+CF-Cache-Status=HIT
+Age=2146
+Server=cloudflare
+CF-RAY=8a8a63c20f3d27bd-LYS
+alt-svc=h3=":443"; ma=86400
+2024-07-25 12:50:50.373 [main] INFO  requestResponseLogger - Cookies: {}
+2024-07-25 12:50:50.374 [main] INFO  requestResponseLogger - Body: {
+    
+}
+2024-07-25 12:50:50.376 [main] INFO  utils.Log4jFilter - Response: {
+    
+}
+2024-07-25 12:50:50.378 [main] INFO  utils.Log4jFilter - This test is intentionally skipped.
+2024-07-25 12:50:50.381 [main] INFO  utils.Log4jFilter - Starting test: Failing Update Post with non-existing ID
+2024-07-25 12:50:50.385 [main] INFO  requestResponseLogger - ========== REQUEST ==============
+2024-07-25 12:50:50.385 [main] INFO  requestResponseLogger - Method: PUT
+2024-07-25 12:50:50.386 [main] INFO  requestResponseLogger - URI: https://jsonplaceholder.typicode.com/posts/99999
+2024-07-25 12:50:50.387 [main] INFO  requestResponseLogger - Headers: Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json
+2024-07-25 12:50:50.387 [main] INFO  requestResponseLogger - Content-Type: application/json
+2024-07-25 12:50:50.387 [main] INFO  requestResponseLogger - Cookies: 
+2024-07-25 12:50:50.387 [main] INFO  requestResponseLogger - Path Params: {postId=99999}
+2024-07-25 12:50:50.387 [main] INFO  requestResponseLogger - Body: { "id": 99999, "title": "foo_updated", "body": "bar_updated", "userId": 1 }
+2024-07-25 12:51:12.280 [main] INFO  requestResponseLogger - ========== RESPONSE ==============
+2024-07-25 12:51:12.280 [main] INFO  requestResponseLogger - Status Code: 500
+2024-07-25 12:51:12.280 [main] INFO  requestResponseLogger - Status Line: HTTP/1.1 500 Internal Server Error
+2024-07-25 12:51:12.281 [main] INFO  requestResponseLogger - Headers: Date=Thu, 25 Jul 2024 07:21:12 GMT
+Content-Type=text/html; charset=utf-8
+Transfer-Encoding=chunked
+Connection=keep-alive
+Report-To={"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1721892072&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=gTiNfedH5PkPX8ymMMOkLcc69KJILjaJ6dwOouOFES4%3D"}]}
+Reporting-Endpoints=heroku-nel=https://nel.heroku.com/reports?ts=1721892072&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=gTiNfedH5PkPX8ymMMOkLcc69KJILjaJ6dwOouOFES4%3D
+Nel={"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By=Express
+X-Ratelimit-Limit=1000
+X-Ratelimit-Remaining=999
+X-Ratelimit-Reset=1721892111
+Vary=Origin, Accept-Encoding
+Access-Control-Allow-Credentials=true
+Cache-Control=no-cache
+Pragma=no-cache
+Expires=-1
+Via=1.1 vegur
+CF-Cache-Status=DYNAMIC
+Server=cloudflare
+CF-RAY=8a8a644938814c56-MXP
+alt-svc=h3=":443"; ma=86400
+2024-07-25 12:51:12.281 [main] INFO  requestResponseLogger - Cookies: {}
+2024-07-25 12:51:12.408 [main] INFO  requestResponseLogger - Body: <html>
+  <body>TypeError: Cannot read properties of undefined (reading 'id')
+    at update (/app/node_modules/json-server/lib/server/router/plural.js:262:24)
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at next (/app/node_modules/express/lib/router/route.js:137:13)
+    at next (/app/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/app/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at /app/node_modules/express/lib/router/index.js:281:22
+    at param (/app/node_modules/express/lib/router/index.js:354:14)
+    at param (/app/node_modules/express/lib/router/index.js:365:14)
+    at Function.process_params (/app/node_modules/express/lib/router/index.js:410:3)</body>
+</html>
+2024-07-25 12:51:12.414 [main] INFO  utils.Log4jFilter - This test is intentionally skipped.
+2024-07-25 12:51:12.418 [main] INFO  utils.Log4jFilter - Full URL: https://jsonplaceholder.typicode.com/posts/1
+2024-07-25 12:51:12.424 [main] INFO  requestResponseLogger - ========== REQUEST ==============
+2024-07-25 12:51:12.424 [main] INFO  requestResponseLogger - Method: GET
+2024-07-25 12:51:12.425 [main] INFO  requestResponseLogger - URI: https://jsonplaceholder.typicode.com/posts/1
+2024-07-25 12:51:12.426 [main] INFO  requestResponseLogger - Headers: Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json
+2024-07-25 12:51:12.426 [main] INFO  requestResponseLogger - Content-Type: application/json
+2024-07-25 12:51:12.426 [main] INFO  requestResponseLogger - Cookies: 
+2024-07-25 12:51:12.427 [main] INFO  requestResponseLogger - Path Params: {pathId=1}
+2024-07-25 12:51:13.078 [main] INFO  requestResponseLogger - ========== RESPONSE ==============
+2024-07-25 12:51:13.079 [main] INFO  requestResponseLogger - Status Code: 200
+2024-07-25 12:51:13.079 [main] INFO  requestResponseLogger - Status Line: HTTP/1.1 200 OK
+2024-07-25 12:51:13.080 [main] INFO  requestResponseLogger - Headers: Date=Thu, 25 Jul 2024 07:21:12 GMT
+Content-Type=application/json; charset=utf-8
+Transfer-Encoding=chunked
+Connection=keep-alive
+Report-To={"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1718656459&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=u6jg%2FMsrjlsgha%2BTP8gEVACdDgpDCdoW212kbLRnudc%3D"}]}
+Reporting-Endpoints=heroku-nel=https://nel.heroku.com/reports?ts=1718656459&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=u6jg%2FMsrjlsgha%2BTP8gEVACdDgpDCdoW212kbLRnudc%3D
+Nel={"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By=Express
+X-Ratelimit-Limit=1000
+X-Ratelimit-Remaining=999
+X-Ratelimit-Reset=1718656500
+Vary=Origin, Accept-Encoding
+Access-Control-Allow-Credentials=true
+Cache-Control=max-age=43200
+Pragma=no-cache
+Expires=-1
+X-Content-Type-Options=nosniff
+Etag=W/"124-yiKdLzqO5gfBrJFrcdJ8Yq0LGnU"
+Via=1.1 vegur
+CF-Cache-Status=HIT
+Age=9533
+Server=cloudflare
+CF-RAY=8a8a6450081a0d5f-MXP
+Content-Encoding=gzip
+alt-svc=h3=":443"; ma=86400
+2024-07-25 12:51:13.080 [main] INFO  requestResponseLogger - Cookies: {}
+2024-07-25 12:51:13.081 [main] INFO  requestResponseLogger - Body: {
+    "userId": 1,
+    "id": 1,
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}
+2024-07-25 12:51:13.109 [main] INFO  utils.Log4jFilter - Full URL: https://jsonplaceholder.typicode.com/posts/1
+2024-07-25 12:51:13.113 [main] INFO  requestResponseLogger - ========== REQUEST ==============
+2024-07-25 12:51:13.113 [main] INFO  requestResponseLogger - Method: GET
+2024-07-25 12:51:13.113 [main] INFO  requestResponseLogger - URI: https://jsonplaceholder.typicode.com/posts/1
+2024-07-25 12:51:13.114 [main] INFO  requestResponseLogger - Headers: Accept=application/json, application/javascript, text/javascript, text/json
+Content-Type=application/json
+2024-07-25 12:51:13.114 [main] INFO  requestResponseLogger - Content-Type: application/json
+2024-07-25 12:51:13.115 [main] INFO  requestResponseLogger - Cookies: 
+2024-07-25 12:51:13.115 [main] INFO  requestResponseLogger - Path Params: {pathId=1}
+2024-07-25 12:51:14.449 [main] INFO  requestResponseLogger - ========== RESPONSE ==============
+2024-07-25 12:51:14.450 [main] INFO  requestResponseLogger - Status Code: 200
+2024-07-25 12:51:14.451 [main] INFO  requestResponseLogger - Status Line: HTTP/1.1 200 OK
+2024-07-25 12:51:14.451 [main] INFO  requestResponseLogger - Headers: Date=Thu, 25 Jul 2024 07:21:14 GMT
+Content-Type=application/json; charset=utf-8
+Transfer-Encoding=chunked
+Connection=keep-alive
+Report-To={"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1718656459&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=u6jg%2FMsrjlsgha%2BTP8gEVACdDgpDCdoW212kbLRnudc%3D"}]}
+Reporting-Endpoints=heroku-nel=https://nel.heroku.com/reports?ts=1718656459&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=u6jg%2FMsrjlsgha%2BTP8gEVACdDgpDCdoW212kbLRnudc%3D
+Nel={"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By=Express
+X-Ratelimit-Limit=1000
+X-Ratelimit-Remaining=999
+X-Ratelimit-Reset=1718656500
+Vary=Origin, Accept-Encoding
+Access-Control-Allow-Credentials=true
+Cache-Control=max-age=43200
+Pragma=no-cache
+Expires=-1
+X-Content-Type-Options=nosniff
+Etag=W/"124-yiKdLzqO5gfBrJFrcdJ8Yq0LGnU"
+Via=1.1 vegur
+CF-Cache-Status=HIT
+Age=9535
+Server=cloudflare
+CF-RAY=8a8a6458bab93753-MXP
+Content-Encoding=gzip
+alt-svc=h3=":443"; ma=86400
+2024-07-25 12:51:14.452 [main] INFO  requestResponseLogger - Cookies: {}
+2024-07-25 12:51:14.453 [main] INFO  requestResponseLogger - Body: {
+    "userId": 1,
+    "id": 1,
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}
